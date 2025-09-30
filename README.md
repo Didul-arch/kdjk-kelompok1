@@ -1,5 +1,6 @@
 # Aplikasi Baserow
 
+<h1 align="center"><img src="https://avatars.githubusercontent.com/u/1261496?v=4"></h1>
 
 ## Sekilas Tentang
 
