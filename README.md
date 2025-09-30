@@ -55,4 +55,5 @@ Skrip shell untuk otomatisasi instalasi, konfigurasi, dan maintenance.
 
 ## Referensi
 
-Cantumkan tiap sumber informasi yang anda pakai.
+[Baserow](https://baserow.io/)
+[Github Baserow](https://github.com/bram2w/baserow)
