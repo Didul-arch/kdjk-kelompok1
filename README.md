@@ -2,16 +2,22 @@
 
 <h1 align="center"><img src="https://avatars.githubusercontent.com/u/1261496?v=4"></h1>
 
-## Sekilas Tentang
+# Sekilas Tentang
 
 Baserow adalah platform open source no-code database yang memungkinkan pengguna membuat, mengelola, dan berbagi data layaknya Airtable. Ia bisa di-self-hosted, berbasis PostgreSQL, serta menyediakan API untuk integrasi dengan aplikasi lain.
 
-## Instalasi
+# Instalasi
 
-- Prasyarat, apa saja yang harus diinstal sebelumnya.
-- Langkah instalasi dalam CLI.
+## Kebutuhan Sistem
+- Unix/Linux, macOS, atau Windows.
+- Docker & Docker Compose: Versi terbaru.
+- RAM: Minimal 2 GB.
+- Penyimpanan: Tergantung jumlah data, disarankan minimal 10 GB kosong.
 
-## Konfigurasi (opsional)
+## Proses Instalasi
+
+
+# Konfigurasi (opsional)
 
 Setting server tambahan yang diperlukan untuk meningkatkan fungsi dan kinerja aplikasi, misalnya:
 
@@ -25,7 +31,7 @@ Plugin untuk fungsi tambahan
 - editor Markdown
 - dll
 
-## Maintenance (opsional)
+# Maintenance (opsional)
 
 Setting tambahan untuk maintenance secara periodik, misalnya:
 
@@ -33,11 +39,11 @@ Setting tambahan untuk maintenance secara periodik, misalnya:
 - hapus direktori sampah tiap hari
 - dll
 
-## Otomatisasi (opsional)
+# Otomatisasi (opsional)
 
 Skrip shell untuk otomatisasi instalasi, konfigurasi, dan maintenance.
 
-## Cara Pemakaian
+# Cara Pemakaian
 
 - Tampilan aplikasi web
 - Fungsi-fungsi utama
@@ -59,14 +65,16 @@ Skrip shell untuk otomatisasi instalasi, konfigurasi, dan maintenance.
 ![Name Database](cara_pakai/database.png)
 ![Edit Database](cara_pakai/edit_database.png)
 
-## Pembahasan
+6. 
+
+# Pembahasan
 
 - Pendapat anda tentang aplikasi web ini
   - kelebihan
   - kekurangan
 - Bandingkan dengan aplikasi web lain yang sejenis
 
-## Referensi
+# Referensi
 
 1. [Baserow](https://baserow.io/)
 2. [Github Baserow](https://github.com/bram2w/baserow)
