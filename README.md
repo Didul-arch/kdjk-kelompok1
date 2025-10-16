@@ -8,13 +8,13 @@ Baserow adalah platform open source no-code database yang memungkinkan pengguna 
 
 # Instalasi
 
-## Kebutuhan Sistem
+### Kebutuhan Sistem :
 - Unix/Linux, macOS, atau Windows.
 - Docker & Docker Compose: Versi terbaru.
 - RAM: Minimal 2 GB.
 - Penyimpanan: Tergantung jumlah data, disarankan minimal 10 GB kosong.
 
-## Proses Instalasi
+### Proses Instalasi
 
 
 # Konfigurasi (opsional)
@@ -50,10 +50,10 @@ Skrip shell untuk otomatisasi instalasi, konfigurasi, dan maintenance.
 - Isi dengan data real/dummy (jangan kosongan) dan sertakan beberapa screenshot
 
 1. Sebelum menggunakan applikasi, kita perlu melakukan login terlebih dahulu.
-   ![Login](cara_pakai/login.png)
+![Login](cara_pakai/login.png)
 
 2. Setelah login berhasil, akan masuk ke halaman home Baserow. Pada menu sidebar terdapat beberapa pilihan yang dapat dilakukan.
-   ![Home](cara_pakai/home.png)
+![Home](cara_pakai/home.png)
 
 3. Fungsi utama pada aplikasi ini adalah mengolah database. Klik add new pada sidebar dan pilih database. 
 ![Database](cara_pakai/add_database.png)
