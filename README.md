@@ -24,7 +24,22 @@ Baserow adalah platform open source no-code database yang memungkinkan pengguna 
 - Penyimpanan: Tergantung jumlah data, disarankan minimal 10 GB kosong.
 
 ### Proses Instalasi
+1. ssh ke Virtual Machine
+- Download key untuk vm (nama: kdjk_key_1.pem) dan save di local.
+- ketik "ssh -i /path/to/kdjk_key_1.pem kelompoksatukdjk@20.2.89.16"
+- Masukkan password dari user kelompoksatukdjk
 
+2. install docker, docker-compose dan git
+- sudo apt update -y
+- sudo apt install docker docker-compose git -y
+
+3. clone dan masuk ke repository baserow
+- git clone https://gitlab.com/bramw/baserow.git
+- cd baserow
+
+4. setup .env untuk baserow ini dari .env.example
+- cp .env.example .env
+- lalu set key pada env, contohnya seperti gambar berikut:
 
 # Konfigurasi (opsional)
 
