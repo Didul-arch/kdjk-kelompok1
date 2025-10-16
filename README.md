@@ -66,8 +66,18 @@ Skrip shell untuk otomatisasi instalasi, konfigurasi, dan maintenance.
 ![Edit Database](cara_pakai/addColloumn.png)
 ![Add Colloumn](cara_pakai/add.png)
 
-6. Tampilan lengkap tabel mahasiswa berisi NIM sebagai primary key, Nama, Email, dan Phone number
+6. Tampilan lengkap tabel mahasiswa berisi NIM sebagai primary key, Nama, Email, dan Phone number.
 ![Tabel mahasiswa](cara_pakai/database_Mahasiswa.png)
+
+7. Untuk mengisi data tabel tekan pada icon persegi putus-putus di sebelah kiri baris.
+![Add Data](cara_pakai/addData.png)
+
+8. Isikan data pada tabel.
+![Isi Data](cara_pakai/isiTabel.png)
+![Data Dummy](cara_pakai/dataDummy.png)
+
+9. Hasil akhir tabel dengan data dummy
+![Tabel Dummy](cara_pakai/hasilTabel.png)
 
 # Pembahasan
 
