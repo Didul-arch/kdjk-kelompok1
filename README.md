@@ -73,39 +73,39 @@ Skrip shell untuk otomatisasi instalasi, konfigurasi, dan maintenance.
 
 **Baserow** adalah platform database no-code sumber terbuka (open-source) yang memungkinkan pengguna untuk membuat dan mengelola database tanpa perlu menulis satu baris kode pun. Sebagai salah-satu platform no-code yang sedang naik daun, aplikasi ini menawarkan berbagai kelebihan, diantaranya:
 
-- Antarmuka yang Intuitif: Tampilannya mirip seperti spreadsheet (misalnya Excel atau Google Sheets), sehingga sangat mudah dipelajari dan digunakan bahkan oleh pengguna non-teknis sekalipun.
+- Tampilannya mirip seperti spreadsheet (misalnya Excel atau Google Sheets), sehingga sangat mudah dipelajari dan digunakan bahkan oleh pengguna non-teknis sekalipun.
 
-- Fleksibilitas Tinggi: Pengguna dapat membuat berbagai jenis kolom data, menghubungkan tabel, dan membangun aplikasi sederhana langsung di atas database yang dibuat.
+- Pengguna dapat membuat berbagai jenis kolom data, menghubungkan tabel, dan membangun aplikasi sederhana langsung di atas database yang dibuat.
 
-- Kolaborasi Real-time: Memungkinkan beberapa pengguna untuk bekerja pada database yang sama secara bersamaan, sangat ideal untuk kerja tim.
+- Memungkinkan beberapa pengguna untuk bekerja pada database yang sama secara bersamaan, sangat ideal untuk kerja tim.
 
-- Open-Source: Kode sumbernya tersedia secara bebas. Ini memberikan kebebasan untuk melakukan self-hosting (instalasi di server sendiri) yang memberikan kontrol penuh atas data dan privasi.
+- Open-source, Ini memberikan kebebasan untuk melakukan self-hosting (instalasi di server sendiri) yang memberikan kontrol penuh atas data dan privasi.
 
-- Integrasi dan API: Menyediakan API (Application Programming Interface) yang kuat, sehingga mudah dihubungkan dengan aplikasi atau layanan lain untuk otomatisasi alur kerja.
+- Menyediakan API (Application Programming Interface) yang kuat, sehingga mudah dihubungkan dengan aplikasi atau layanan lain untuk otomatisasi alur kerja.
 
-- Skalabilitas: Mampu menangani database dengan jumlah baris yang sangat besar tanpa mengalami penurunan performa yang signifikan.
+- Mampu menangani database dengan jumlah baris yang sangat besar tanpa mengalami penurunan performa yang signifikan.
 
 Tentu saja, sebuah aplikasi pasti memiliki kekurangan. Kekurangan yang dimiliki Baserow antara lain:
 
-- Fitur Lanjutan yang Terbatas: Meskipun kuat untuk manajemen data dasar hingga menengah, beberapa fitur database relasional yang sangat kompleks mungkin belum tersedia selengkapnya.
+- Meskipun kuat untuk manajemen data dasar hingga menengah, beberapa fitur database relasional yang sangat kompleks mungkin belum tersedia selengkapnya.
 
-- Komunitas yang Masih Berkembang: Dibandingkan dengan kompetitor yang lebih lama, komunitas penggunanya belum sebesar alternatif lain, sehingga sumber daya belajar atau solusi dari komunitas mungkin lebih terbatas.
+- Dibandingkan dengan kompetitor yang lebih lama, komunitas penggunanya belum sebesar alternatif lain, sehingga sumber daya belajar atau solusi dari komunitas mungkin lebih terbatas.
 
-- Memerlukan Pengetahuan Teknis untuk Self-Hosting: Meskipun opsi self-hosting adalah kelebihan, proses instalasi dan pemeliharaannya memerlukan pemahaman teknis tentang server dan database.
+- Meskipun opsi self-hosting adalah kelebihan, proses instalasi dan pemeliharaannya memerlukan pemahaman teknis tentang server dan database.
 
-- Kurva Belajar untuk Fitur Otomatisasi: Walaupun antarmukanya mudah, untuk memanfaatkan fitur API dan otomatisasi secara maksimal, pengguna tetap memerlukan sedikit pemahaman konsep teknis.
+- Walaupun antarmukanya mudah, untuk memanfaatkan fitur API dan otomatisasi secara maksimal, pengguna tetap memerlukan sedikit pemahaman konsep teknis.
 
-Jika dibandingkan dengan aplikasi sejenisnya seperti **Limbas**, Baserow memiliki beberapa keunggulan dan kelemahan. Berikut adalah beberapa perbandingan antara kedua aplikasi ini:
+Jika dibandingkan dengan aplikasi sejenisnya seperti **Limbas**, **Baserow** memiliki beberapa keunggulan dan kelemahan. Berikut adalah beberapa perbandingan antara kedua aplikasi ini:
 
-- Target Pengguna: Baserow lebih ditujukan untuk pengguna bisnis dan individu yang memerlukan database online yang fleksibel dan mudah digunakan, mirip seperti Airtable. Sedangkan Limbas lebih berfokus pada solusi enterprise untuk manajemen proses bisnis (Business Process Management), manajemen dokumen, dan pengembangan aplikasi low-code yang lebih terstruktur dan kompleks.
+- **Baserow** lebih ditujukan untuk pengguna bisnis dan individu yang memerlukan database online yang fleksibel dan mudah digunakan, mirip seperti Airtable. Sedangkan **Limbas** lebih berfokus pada solusi enterprise untuk manajemen proses bisnis (Business Process Management), manajemen dokumen, dan pengembangan aplikasi low-code yang lebih terstruktur dan kompleks.
 
-- Antarmuka dan Kemudahan Penggunaan: Baserow unggul dalam kemudahan penggunaan dengan antarmuka spreadsheet-nya yang familier. Limbas, dengan fokus pada proses bisnis, memiliki antarmuka yang lebih kompleks dan memerlukan waktu belajar yang lebih lama.
+- **Baserow** unggul dalam kemudahan penggunaan dengan antarmuka spreadsheet-nya yang familier. **Limbas**, dengan fokus pada proses bisnis, memiliki antarmuka yang lebih kompleks dan memerlukan waktu belajar yang lebih lama.
 
-- Fleksibilitas vs. Struktur: Baserow menawarkan kebebasan dan fleksibilitas dalam menstrukturkan data sesuai keinginan pengguna. Sebaliknya, Limbas menyediakan kerangka kerja dan modul yang lebih terstruktur untuk membangun solusi bisnis yang spesifik, seperti sistem CRM atau manajemen proyek.
+- **Baserow** menawarkan kebebasan dan fleksibilitas dalam menstrukturkan data sesuai keinginan pengguna. Sebaliknya, **Limbas** menyediakan kerangka kerja dan modul yang lebih terstruktur untuk membangun solusi bisnis yang spesifik, seperti sistem CRM atau manajemen proyek.
 
-- Instalasi dan Teknologi: Keduanya merupakan open-source dan berbasis PHP. Namun, fokus Baserow pada pengalaman pengguna membuatnya terasa lebih modern dan ringan untuk tugas manajemen data. Limbas dirancang untuk alur kerja perusahaan yang lebih rumit dan terintegrasi.
+- Keduanya merupakan open-source dan berbasis PHP. Namun, fokus **Baserow** pada pengalaman pengguna membuatnya terasa lebih modern dan ringan untuk tugas manajemen data. **Limbas** dirancang untuk alur kerja perusahaan yang lebih rumit dan terintegrasi.
 
-- Komunitas dan Ekosistem: Sebagai solusi enterprise, dukungan untuk Limbas mungkin lebih terfokus pada layanan komersial dan dokumentasi resmi. Baserow, dengan sifatnya yang lebih umum, memiliki potensi untuk membangun komunitas pengguna yang lebih luas dan beragam di masa depan.
+- Sebagai solusi enterprise, dukungan untuk **Limbas** mungkin lebih terfokus pada layanan komersial dan dokumentasi resmi. Baserow, dengan sifatnya yang lebih umum, memiliki potensi untuk membangun komunitas pengguna yang lebih luas dan beragam di masa depan.
 
 # Referensi
 
