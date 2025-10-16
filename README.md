@@ -2,8 +2,12 @@
 
 <h1 align="center"><img src="https://avatars.githubusercontent.com/u/1261496?v=4"></h1>
 
+<div align="center">
+  
 [Sekilas Tentang](#sekilas-tentang) | [Instalasi](#instalasi) | [Cara Pemakaian](#cara-pemakaian) | [Pembahasan](#pembahasan) | [Referensi](#referensi)
 :---:|:---:|:---:|:---:|:---:
+
+</div>
 
 # Sekilas Tentang
 [`^ kembali ke atas ^`](#)
