@@ -71,12 +71,7 @@ Skrip shell untuk otomatisasi instalasi, konfigurasi, dan maintenance.
 
 # Pembahasan
 
-- Pendapat anda tentang aplikasi web ini
-  - kelebihan
-  - kekurangan
-- Bandingkan dengan aplikasi web lain yang sejenis
-
-Baserow adalah platform database no-code sumber terbuka (open-source) yang memungkinkan pengguna untuk membuat dan mengelola database tanpa perlu menulis satu baris kode pun. Sebagai salah-satu platform no-code yang sedang naik daun, aplikasi ini menawarkan berbagai kelebihan, diantaranya:
+**Baserow** adalah platform database no-code sumber terbuka (open-source) yang memungkinkan pengguna untuk membuat dan mengelola database tanpa perlu menulis satu baris kode pun. Sebagai salah-satu platform no-code yang sedang naik daun, aplikasi ini menawarkan berbagai kelebihan, diantaranya:
 
 - Antarmuka yang Intuitif: Tampilannya mirip seperti spreadsheet (misalnya Excel atau Google Sheets), sehingga sangat mudah dipelajari dan digunakan bahkan oleh pengguna non-teknis sekalipun.
 
@@ -100,7 +95,7 @@ Tentu saja, sebuah aplikasi pasti memiliki kekurangan. Kekurangan yang dimiliki 
 
 - Kurva Belajar untuk Fitur Otomatisasi: Walaupun antarmukanya mudah, untuk memanfaatkan fitur API dan otomatisasi secara maksimal, pengguna tetap memerlukan sedikit pemahaman konsep teknis.
 
-Jika dibandingkan dengan aplikasi sejenisnya seperti Limbas, Baserow memiliki beberapa keunggulan dan kelemahan. Berikut adalah beberapa perbandingan antara kedua aplikasi ini:
+Jika dibandingkan dengan aplikasi sejenisnya seperti **Limbas**, Baserow memiliki beberapa keunggulan dan kelemahan. Berikut adalah beberapa perbandingan antara kedua aplikasi ini:
 
 - Target Pengguna: Baserow lebih ditujukan untuk pengguna bisnis dan individu yang memerlukan database online yang fleksibel dan mudah digunakan, mirip seperti Airtable. Sedangkan Limbas lebih berfokus pada solusi enterprise untuk manajemen proses bisnis (Business Process Management), manajemen dokumen, dan pengembangan aplikasi low-code yang lebih terstruktur dan kompleks.
 
