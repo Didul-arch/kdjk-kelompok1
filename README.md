@@ -24,37 +24,56 @@ Baserow adalah platform open source no-code database yang memungkinkan pengguna 
 - Penyimpanan: Tergantung jumlah data, disarankan minimal 10 GB kosong.
 
 ### Proses Instalasi
-1. ssh ke Virtual Machine
+#### 1. ssh ke Virtual Machine
 - Download key untuk vm (nama: kdjk_key_1.pem) dan save di local.
-- ketik "ssh -i /path/to/kdjk_key_1.pem kelompoksatukdjk@20.2.89.16"
+```
+ssh -i /path/to/kdjk_key_1.pem kelompoksatukdjk@20.2.89.16
+```
 - Masukkan password dari user kelompoksatukdjk
 
-2. install docker, docker-compose dan git
-- sudo apt update -y
-- sudo apt install docker docker-compose git -y
+#### 2. install docker, docker-compose dan git
+```
+sudo apt update -y
+sudo apt install docker docker-compose git -y
+```
+#### 3. clone dan masuk ke repository baserow
+```
+git clone https://gitlab.com/bramw/baserow.git
+cd baserow
+```
+#### 4. setup .env untuk baserow ini dari .env.example
+```
+cp .env.example .env
+lalu set key pada env, contohnya seperti gambar berikut:
+```
 
-3. clone dan masuk ke repository baserow
-- git clone https://gitlab.com/bramw/baserow.git
-- cd baserow
-
-4. setup .env untuk baserow ini dari .env.example
-- cp .env.example .env
-- lalu set key pada env, contohnya seperti gambar berikut:
+#### 5. Run docker-compose di directory yang sama
+```
+docker compose up -d
+```
 
 # Konfigurasi (opsional)
 
 Setting server tambahan yang diperlukan untuk meningkatkan fungsi dan kinerja aplikasi, misalnya:
 
-- batas upload file
-- batas memori
-- dll
-
-Plugin untuk fungsi tambahan
-
-- login dengan Google/Facebook
-- editor Markdown
-- dll
-
+1. Setup firewall
+```
+sudo ufw allow 80/tcp
+sudo ufw allow 443/tcp
+sudo ufw allow ssh
+sudo ufw enable
+```
+2. Setup SMTP (agar dapat mengirim email)
+- buka .env di direktori baserow, lalu ubah:
+```
+EMAIL_SMTP=true
+EMAIL_SMTP_HOST=smtp.mailtrap.io
+EMAIL_SMTP_PORT=587
+EMAIL_SMTP_USER=your_username
+EMAIL_SMTP_PASSWORD=your_password
+EMAIL_SMTP_USE_TLS=true
+FROM_EMAIL=your_email@example.com
+```
 # Maintenance (opsional)
 
 Setting tambahan untuk maintenance secara periodik, misalnya:
