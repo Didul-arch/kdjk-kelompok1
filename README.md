@@ -53,17 +53,18 @@ Skrip shell untuk otomatisasi instalasi, konfigurasi, dan maintenance.
 ![Login](cara_pakai/login.png)
 
 2. Setelah login berhasil, akan masuk ke halaman home Baserow. Pada menu sidebar terdapat beberapa pilihan yang dapat dilakukan.
-![Home](cara_pakai/home.png)
+![Home](cara_pakai/homepage.png)
 
 3. Fungsi utama pada aplikasi ini adalah mengolah database. Klik add new pada sidebar dan pilih database. 
-![Database](cara_pakai/add_database.png)
+![Database](cara_pakai/addDatabase.png)
 
 4. Pilih untuk membuat database baru atau bisa import database. 
-![Add Database](cara_pakai/name_database.png)
+![Add Database](cara_pakai/nameDatabase.png)
 
 5. Setelah itu akan masuk ke halaman dashboard database. Kita bisa menambah tabel pada database, dan bisa mengatur isi dari tabel tersebut. 
 ![Name Database](cara_pakai/database.png)
-![Edit Database](cara_pakai/edit_database.png)
+![Edit Database](cara_pakai/addColloumn.png)
+![Add Colloumn](cara_pakai/add.png)
 
 6. 
 
