@@ -89,7 +89,7 @@ Skrip shell untuk otomatisasi instalasi, konfigurasi, dan maintenance.
 # Cara Pemakaian
 [`^ kembali ke atas ^`](#)
 
-1. Sebelum menggunakan applikasi, kita perlu melakukan login terlebih dahulu.
+1. Sebelum menggunakan aplikasi, kita perlu melakukan login terlebih dahulu.
 
 ![Login](cara_pakai/login.png)
 
