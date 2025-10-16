@@ -2,11 +2,16 @@
 
 <h1 align="center"><img src="https://avatars.githubusercontent.com/u/1261496?v=4"></h1>
 
+[Sekilas Tentang](#sekilas-tentang) | [Instalasi](#instalasi) | [Cara Pemakaian](#cara-pemakaian) | [Pembahasan](#pembahasan) | [Referensi](#referensi)
+:---:|:---:|:---:|:---:|:---:|:---:|:---:
+
 # Sekilas Tentang
+[`^ kembali ke atas ^`](#)
 
 Baserow adalah platform open source no-code database yang memungkinkan pengguna membuat, mengelola, dan berbagi data layaknya Airtable. Ia bisa di-self-hosted, berbasis PostgreSQL, serta menyediakan API untuk integrasi dengan aplikasi lain.
 
 # Instalasi
+[`^ kembali ke atas ^`](#)
 
 ### Kebutuhan Sistem :
 - Unix/Linux, macOS, atau Windows.
@@ -44,10 +49,7 @@ Setting tambahan untuk maintenance secara periodik, misalnya:
 Skrip shell untuk otomatisasi instalasi, konfigurasi, dan maintenance.
 
 # Cara Pemakaian
-
-- Tampilan aplikasi web
-- Fungsi-fungsi utama
-- Isi dengan data real/dummy (jangan kosongan) dan sertakan beberapa screenshot
+[`^ kembali ke atas ^`](#)
 
 1. Sebelum menggunakan applikasi, kita perlu melakukan login terlebih dahulu.
 ![Login](cara_pakai/login.png)
@@ -80,6 +82,7 @@ Skrip shell untuk otomatisasi instalasi, konfigurasi, dan maintenance.
 ![Tabel Dummy](cara_pakai/hasilTabel.png)
 
 # Pembahasan
+[`^ kembali ke atas ^`](#)
 
 **Baserow** adalah platform database no-code sumber terbuka (open-source) yang memungkinkan pengguna untuk membuat dan mengelola database tanpa perlu menulis satu baris kode pun. Sebagai salah-satu platform no-code yang sedang naik daun, aplikasi ini menawarkan berbagai kelebihan, diantaranya:
 
@@ -118,6 +121,7 @@ Jika dibandingkan dengan aplikasi sejenisnya seperti **Limbas**, **Baserow** mem
 - Sebagai solusi enterprise, dukungan untuk **Limbas** mungkin lebih terfokus pada layanan komersial dan dokumentasi resmi. Baserow, dengan sifatnya yang lebih umum, memiliki potensi untuk membangun komunitas pengguna yang lebih luas dan beragam di masa depan.
 
 # Referensi
+[`^ kembali ke atas ^`](#)
 
 1. [Baserow](https://baserow.io/)
 2. [Github Baserow](https://github.com/bram2w/baserow)
