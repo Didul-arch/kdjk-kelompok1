@@ -52,33 +52,45 @@ Skrip shell untuk otomatisasi instalasi, konfigurasi, dan maintenance.
 [`^ kembali ke atas ^`](#)
 
 1. Sebelum menggunakan applikasi, kita perlu melakukan login terlebih dahulu.
+
 ![Login](cara_pakai/login.png)
 
 2. Setelah login berhasil, akan masuk ke halaman home Baserow. Pada menu sidebar terdapat beberapa pilihan yang dapat dilakukan.
+
 ![Home](cara_pakai/homepage.png)
 
 3. Fungsi utama pada aplikasi ini adalah mengolah database. Klik add new pada sidebar dan pilih database. 
+
 ![Database](cara_pakai/addDatabase.png)
 
 4. Pilih untuk membuat database baru atau bisa import database. 
+
 ![Add Database](cara_pakai/nameDatabase.png)
 
 5. Setelah itu akan masuk ke halaman dashboard database. Kita bisa menambah tabel pada database, dan bisa mengatur isi dari tabel tersebut. 
+
 ![Name Database](cara_pakai/database.png)
+
 ![Edit Database](cara_pakai/addColloumn.png)
+
 ![Add Colloumn](cara_pakai/add.png)
 
 6. Tampilan lengkap tabel mahasiswa berisi NIM sebagai primary key, Nama, Email, dan Phone number.
+
 ![Tabel mahasiswa](cara_pakai/database_Mahasiswa.png)
 
 7. Untuk mengisi data tabel tekan pada icon persegi putus-putus di sebelah kiri baris.
+
 ![Add Data](cara_pakai/addData.png)
 
 8. Isikan data pada tabel.
+
 ![Isi Data](cara_pakai/isiTabel.png)
+
 ![Data Dummy](cara_pakai/dataDummy.png)
 
 9. Hasil akhir tabel dengan data dummy
+
 ![Tabel Dummy](cara_pakai/hasilTabel.png)
 
 # Pembahasan
