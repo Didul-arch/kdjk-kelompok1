@@ -305,3 +305,5 @@ Jika dibandingkan dengan aplikasi sejenisnya seperti **Limbas**, **Baserow** mem
 
 1. [Baserow](https://baserow.io/)
 2. [Github Baserow](https://github.com/bram2w/baserow)
+3. [Limbas](https://www.limbas.com/en/)
+4. [Github Limbas](https://github.com/limbas/limbas)
