@@ -52,17 +52,11 @@ DATABASE_PASSWORD = kelompoksatukdjk
 REDIS_PASSWORD = kelompoksatukdjk
 BASEROW_PUBLIC_URL = http://my.public.ip
 ```
-
-
 #### 5. Run docker-compose di directory yang sama
 ```
 $ docker compose up -d
 ```
-
-# Konfigurasi (opsional)
-
-Setting server tambahan yang diperlukan untuk meningkatkan fungsi dan kinerja aplikasi, misalnya:
-
+# Konfigurasi 
 ### 1. Setup firewall
 Eksekusi perintah di bawah pada shell di server:
 ```
@@ -82,15 +76,18 @@ EMAIL_SMTP_PASSWORD=your_password
 EMAIL_SMTP_USE_TLS=true
 FROM_EMAIL=your_email@example.com
 ```
-# Maintenance (opsional)
+# Maintenance 
+### Backup Database Rutin
 
-Setting tambahan untuk maintenance secara periodik, misalnya:
+Klik titik 3 pada tabel yang ingin di backup datanya, lalu pilih "export table".
 
-- buat backup database tiap pekan
-- hapus direktori sampah tiap hari
-- dll
+![Titik 3](cara_pakai/export1.png)
 
-# Otomatisasi (opsional)
+Pilih format export yang diinginkan, bentuk pemisah kolom, dan jenis encoding. Lalu klik export dan download.
+
+![Export](cara_pakai/export2.png)
+
+# Otomatisasi 
 #### 1. Buat file bernama ```setup_baserow_auto.sh``` lalu isi dengan script di bawah:
 ```
 #!/usr/bin/env bash
@@ -207,7 +204,6 @@ main() {
 
 main "$@"
 ```
-
 #### 2. Buat ```setup_baserow_auto.sh``` menjadi executable
 ```
 $ chmod +x setup_baserow_auto.sh
