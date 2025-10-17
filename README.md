@@ -27,43 +27,51 @@ Baserow adalah platform open source no-code database yang memungkinkan pengguna 
 #### 1. ssh ke Virtual Machine
 - Download key untuk vm (nama: kdjk_key_1.pem) dan save di local.
 ```
-ssh -i /path/to/kdjk_key_1.pem kelompoksatukdjk@20.2.89.16
+$ ssh -i /path/to/kdjk_key_1.pem kelompoksatukdjk@my.public.ip
 ```
 - Masukkan password dari user kelompoksatukdjk
 
 #### 2. install docker, docker-compose dan git
 ```
-sudo apt update -y
-sudo apt install docker docker-compose git -y
+$ sudo apt update -y
+$ sudo apt install docker docker-compose git -y
 ```
 #### 3. clone dan masuk ke repository baserow
 ```
-git clone https://gitlab.com/bramw/baserow.git
-cd baserow
+$ git clone https://gitlab.com/bramw/baserow.git
+$ cd baserow
 ```
 #### 4. setup .env untuk baserow ini dari .env.example
 ```
-cp .env.example .env
-lalu set key pada env, contohnya seperti gambar berikut:
+$ cp .env.example .env
 ```
+lalu set key pada env, contohnya seperti berikut:
+```
+SECRET_KEY = imamkipas
+DATABASE_PASSWORD = kelompoksatukdjk
+REDIS_PASSWORD = kelompoksatukdjk
+BASEROW_PUBLIC_URL = http://my.public.ip
+```
+
 
 #### 5. Run docker-compose di directory yang sama
 ```
-docker compose up -d
+$ docker compose up -d
 ```
 
 # Konfigurasi (opsional)
 
 Setting server tambahan yang diperlukan untuk meningkatkan fungsi dan kinerja aplikasi, misalnya:
 
-1. Setup firewall
+### 1. Setup firewall
+Eksekusi perintah di bawah pada shell di server:
 ```
-sudo ufw allow 80/tcp
-sudo ufw allow 443/tcp
-sudo ufw allow ssh
-sudo ufw enable
+$ sudo ufw allow 80/tcp
+$ sudo ufw allow 443/tcp
+$ sudo ufw allow ssh
+$ sudo ufw enable
 ```
-2. Setup SMTP (agar dapat mengirim email)
+### 2. Setup SMTP (agar dapat mengirim email)
 - buka .env di direktori baserow, lalu ubah:
 ```
 EMAIL_SMTP=true
@@ -83,9 +91,131 @@ Setting tambahan untuk maintenance secara periodik, misalnya:
 - dll
 
 # Otomatisasi (opsional)
+#### 1. Buat file bernama ```setup_baserow_auto.sh``` lalu isi dengan script di bawah:
+```
+#!/usr/bin/env bash
+set -euo pipefail
 
-Skrip shell untuk otomatisasi instalasi, konfigurasi, dan maintenance.
+# Konfigurasi default — ubah kalau perlu
+REPO_URL="https://gitlab.com/bramw/baserow.git"
+BRANCH="main"
+APP_DIR="$HOME/baserow"      # direktori tempat aplikasi akan berada
 
+log() {
+  echo "[$(date +'%Y-%m-%d %H:%M:%S')] $*"
+}
+
+input_var() {
+  local prompt="$1"
+  local varname="$2"
+  local hidden="${3:-0}"
+  if [ "$hidden" -eq 1 ]; then
+    read -rp "$prompt: " -s val
+    echo
+  else
+    read -rp "$prompt: " val
+  fi
+  eval "$varname=\$val"
+}
+
+install_dependencies() {
+  log "Memperbarui apt & install docker, docker-compose, git"
+  sudo apt update -y
+  sudo apt install -y docker docker-compose git
+  # Pastikan user ada di grup docker agar tidak selalu butuh sudo
+  sudo usermod -aG docker "$USER"
+}
+
+fetch_repo() {
+  if [ -d "$APP_DIR" ]; then
+    log "Repo sudah ada — menarik perubahan"
+    cd "$APP_DIR"
+    git fetch origin
+    git reset --hard origin/"$BRANCH"
+  else
+    log "Cloning repo"
+    git clone "$REPO_URL" "$APP_DIR"
+    cd "$APP_DIR"
+  fi
+}
+
+setup_env() {
+  cd "$APP_DIR"
+  if [ -f .env.example ]; then
+    cp .env.example .env
+  else
+    log "File .env.example tidak ditemukan, membuat .env baru"
+    touch .env
+  fi
+
+  # Input dari user
+  input_var "SECRET_KEY (untuk Baserow backend): " SECRET_KEY 1
+  input_var "Database password: " DB_PASSWORD 1
+  input_var "Redis password: " REDIS_PASSWORD 1
+  input_var "Public URL (contoh: https://domainanda.com): " BASEROW_PUBLIC_URL
+
+  # Validasi
+  if [ -z "$SECRET_KEY" ] || [ -z "$DB_PASSWORD" ] || [ -z "$REDIS_PASSWORD" ] || [ -z "$BASEROW_PUBLIC_URL" ]; then
+    echo "Error: Semua nilai wajib diisi." >&2
+    exit 1
+  fi
+
+  # Tulis ke .env (append / replace)
+  set_env() {
+    local key="$1"
+    local val="$2"
+    if grep -qE "^${key}=" .env; then
+      sed -i "s~^${key}=.*~${key}=${val}~" .env
+    else
+      echo "${key}=${val}" >> .env
+    fi
+  }
+
+  set_env "SECRET_KEY" "$SECRET_KEY"
+  set_env "DATABASE_PASSWORD" "$DB_PASSWORD"
+  set_env "REDIS_PASSWORD" "$REDIS_PASSWORD"
+  set_env "BASEROW_PUBLIC_URL" "$BASEROW_PUBLIC_URL"
+  
+  log ".env disiapkan"
+}
+
+deploy_docker_compose() {
+  cd "$APP_DIR"
+  log "Menjalankan docker-compose up -d"
+  docker-compose up -d
+}
+
+setup_firewall() {
+  log "Membuka port 80, 443, ssh"
+  sudo ufw allow 80/tcp
+  sudo ufw allow 443/tcp
+  sudo ufw allow ssh
+  sudo ufw --force enable
+}
+
+main() {
+  log "Mulai otomatisasi setup Baserow"
+
+  install_dependencies
+  fetch_repo
+  setup_env
+  deploy_docker_compose
+  setup_firewall
+
+  log "Selesai. Akses aplikasi di: $BASEROW_PUBLIC_URL"
+}
+
+main "$@"
+```
+
+#### 2. Buat ```setup_baserow_auto.sh``` menjadi executable
+```
+$ chmod +x setup_baserow_auto.sh
+```
+#### 3.Run ```setup_baserow_auto.sh``` 
+```
+$ ./setup_baserow_auto.sh
+```
 # Cara Pemakaian
 [`^ kembali ke atas ^`](#)
 
